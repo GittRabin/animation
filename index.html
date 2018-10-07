@@ -1,0 +1,34 @@
+<style>
+  body{
+    background-color: black;
+  }
+  .earth{
+    width:800px;
+    height: 800px;
+    top:0; left:0; bottom:0; right:0;
+    margin:auto;
+    position:absolute;
+    background-image: url(image/earth1.jpg);
+    background-size: cover;
+    border-radius: 50%;
+    box-shadow: -20px -20px 60px 2px rgba(255,255,255,.2) inset, 0 0 20px 2px rgba(255,255,255,.2);
+    animation:spin 40s linear infinite;
+  }
+  @keyframes spin{
+    0%{background-position: 0 0;}
+    100%{background-position: 100%;}
+  }
+</style>
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Spinning Earth</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Bootstrap -->
+  </head>
+  <body>
+    <div class="earth">
+    </div>
+  </body>
+</html>
